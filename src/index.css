@@ -1,0 +1,76 @@
+:root {
+  --purple-gradient: linear-gradient(90deg, rgba(73,135,255,1) 0%, rgba(106,10,254,1) 100%);
+  --green: #14C685;
+}
+#navbar {
+  display: flex;
+  flex-direction: row;
+  border-style: solid;
+  border-width: 2px;
+  border-color: red;
+  justify-content: space-between;
+}
+
+.box-style {
+  border-radius: 15px;
+  width: 58px;
+  height: 58px;
+}
+
+.purple-bg {
+  background: var(--purple-gradient);;
+}
+
+.green-bg {
+  background: var(--green);
+}
+
+.title {
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 25px;
+}
+
+.home-title {
+  font-weight: 200;
+}
+
+.round-btn {
+  border-radius: 50%;
+  border: none;
+  height: 36px;
+  width: 36px;
+}
+
+.large-btn {
+  width: 170px;
+  height: 57px;
+  color: white;
+  border-radius: 15px;
+  border: none;
+}
+
+.home-img {
+  border-radius: 20px;
+  width: 320px;
+}
+
+.skill-btn {
+  border-radius: 12px;
+  background: grey;
+  width: 71px;
+  height: 28px;
+}
+.skill-container {
+  display: flex;
+  flex-direction: wrap;
+}
+
+.skill-box {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 10px;
+  width: 75px;
+  height: 75px;
+}
