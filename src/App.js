@@ -13,13 +13,16 @@ import About from './components/About';
 function App() {
   return (
     <div className='App'>
+      {/* Add in a box shadow later to separate the div */}
       <Navbar />
+      <div className='app-two'>
       <Home />
       <Skills />
       <Projects />
       <About />
       <Contact />
       <Footer/>
+      </div>
     </div>
   );
 }
