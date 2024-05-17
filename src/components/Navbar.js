@@ -12,7 +12,7 @@ const Navbar = () => {
 
     return (
         <>
-            <div id='navbar'>
+            <div id='navbar' className='border'>
                 <button className='box-style blue-bg icon' onClick={ () => {
                     menuSelect();
                 }}>

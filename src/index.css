@@ -1,9 +1,39 @@
 :root {
-  --purple-gradient: linear-gradient(102deg, rgba(73,135,255,1) 0%, rgba(106,10,254,1) 100%);
-  --blue-gradient: linear-gradient(122deg, rgba(106,10,254,1) 0%, rgba(73,135,255,1) 100%);
+  --purple-gradient: linear-gradient(102deg, rgba(73, 135, 255, 1) 0%, rgba(106, 10, 254, 1) 100%);
+  --blue-gradient: linear-gradient(122deg, rgba(106, 10, 254, 1) 0%, rgba(73, 135, 255, 1) 100%);
   --green: #14C685;
   --purple: #8D65EF;
+  --btn-icon-gray: #484C55;
+  --font-gray: #1F2227;
+  --html: #e34c26;
+  --css: #264de4;
+  --js: #f0db4f;
+  --react: #61dafb;
+  --bootstrap: #563d7c;
+  --tailwind: #38b2ac;
+  --framer: #e10098;
+  --git: #f1502f;
+  --express: #000000;
+  --mongo: #4db33d;
+  --mysql: #00758f;
+  --socket: #010101;
+  --node: #68A063;
+  --blue-outline: #5D8BFF;
 }
+
+.outfit-font {
+  font-family: 'Outfit', sans-serif;
+}
+
+.font-gray {
+  color: var(--font-gray);
+}
+
+.border {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 #navbar {
   display: flex;
   flex-direction: row;
@@ -18,11 +48,13 @@
 }
 
 .blue-bg {
-  background: var(--blue-gradient);;
+  background: var(--blue-gradient);
+  ;
 }
 
 .purple-bg {
-  background: var(--purple-gradient);;
+  background: var(--purple-gradient);
+  ;
 }
 
 .green-bg {
@@ -36,13 +68,12 @@
 }
 
 .home-title {
-  font-family: 'Outfit', sans-serif;
   font-weight: 500;
   font-size: 35px;
+  padding-top: 20px;
 }
 
 .home-subtitle {
-  font-family: 'Outfit', sans-serif;
   font-weight: 400;
   font-size: 40px;
   color: var(--green);
@@ -53,6 +84,7 @@
   border: none;
   height: 36px;
   width: 36px;
+  color: var(--btn-icon-gray);
 }
 
 .large-btn {
@@ -65,23 +97,50 @@
 
 .home-img {
   border-radius: 20px;
-  width: 320px;
+  width: 90%;
+  margin-top: 35px;
+  display: block;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.skill-title-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .skill-btn {
   border-radius: 12px;
-  background: grey;
+  border: none;
+  color: var(--btn-icon-gray);
+  font-size: 14px;
+  font-weight: 500;
   width: 71px;
   height: 28px;
+  margin-top: 35px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 .skill-container {
   display: flex;
-  flex-direction: wrap;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.skill-title {
+  font-size: 30px;
+  font-weight: 500;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .skill-box {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background: white;
   border-radius: 10px;
   width: 75px;
@@ -96,4 +155,215 @@
 
 .project-btn {
   font-size: 20px;
+}
+
+.btn-1 {
+  margin-left: 40px;
+}
+
+.btn-2 {
+  margin-left: 6px;
+}
+
+.skill-box span {
+  margin-top: 5px;
+  font-size: 10.9px;
+  text-align: center;
+}
+
+.skill-icon {
+  height: 75px;
+  width: 75px;
+}
+/* Individual colors for each skill icon */
+.html5 svg {
+  color: var(--html);
+}
+
+.css3 svg {
+  color: var(--css);
+}
+
+.javascript svg {
+  color: var(--js);
+}
+
+.react svg {
+  color: var(--react);
+}
+
+.bootstrap svg {
+  color: var(--bootstrap);
+}
+
+.tailwind svg {
+  color: var(--tailwind);
+}
+
+.framer-motion svg {
+  color: var(--framer);
+}
+
+.git svg {
+  color: var(--git);
+}
+
+.express svg {
+  color: var(--express);
+}
+
+.mongodb svg {
+  color: var(--mongo);
+}
+
+.mysql svg {
+  color: var(--mysql);
+}
+
+.socketio svg {
+  color: var(--socket);
+}
+
+.node svg {
+  color: var(--node);
+}
+
+.project-button {
+  border-color: var(--blue-outline);
+  background: none;
+  color: var(--font-gray);
+  border-radius: 100px;
+  margin-left: 4px;
+  margin-right: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 4px 12px 4px 12px;
+}
+
+.project-button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.project-title {
+  text-align: center;
+}
+
+.project-pagination {
+  height: 61px;
+  width: 60px;
+  background: #1D1D27;
+  border: none;
+  border-radius: 10px;
+}
+
+.pagination-btn {
+  border: none;
+  border-radius: 10px;
+}
+
+.project-contact-btn {
+  border-radius: 18px;
+  font-size: 18px;
+  font-weight: 500;
+  border-color: var(--green);
+  background: none;
+  padding: 18px 34px 18px 34px;
+}
+
+.about-title {
+  font-size: 30px;
+  color: var(--font-gray);
+  font-weight: 600;
+}
+
+.about-subtitle {
+  font-size: 20px;
+  color: var(--green);
+  font-weight: 600;
+}
+
+.about-p {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.resume-btn {
+  color: white;
+  font-size: 20px;
+  padding: 39px 16px 39px 16px;
+  border: none;
+  border-radius: 15px;
+  background: var(--purple-gradient);
+  height: 61px;
+  width: 155px;
+}
+
+.location-btn {
+  height: 53px;
+  width: 53px;
+  background: var(--purple-gradient);
+  border: none;
+  border-radius: 10px;
+}
+
+.contact-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.google-map {
+  padding-bottom: 50%;
+  position: relative;
+  width: 600px;
+  height: 450px;
+}
+
+.google-map iframe {
+  border: none;
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+
+.my-form {
+  display: flex;
+}
+
+.contact-h1 {
+  color: var(--purple);
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.contact-h2 {
+  color: var(--font-gray);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.input-shape {
+  border-color: var(--btn-icon-gray);
+  border-radius: 5px;
+  height: 54px;
+  width: 306px;
+  padding: 18px 15px 18px 15px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.submit-btn {
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 10px;
+  height: 52px;
+  width: 306px;
+  background: var(--purple-gradient);
+  color: white;
 }

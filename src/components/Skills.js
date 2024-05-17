@@ -11,29 +11,30 @@ import { SiExpress } from "react-icons/si";
 import { BiLogoMongodb } from "react-icons/bi";
 import { SiMysql } from "react-icons/si";
 import { SiSocketdotio } from "react-icons/si";
-import { FaJava } from "react-icons/fa6";
+import { FaNodeJs } from "react-icons/fa";
 
 const Skills = () => {
 
     return (
         <>
-            <h3 className='skill-btn'>Skills</h3>
-            <h1>Software Languages</h1>
+            <div className='skill-title-container'>
+                <button className='skill-btn outfit-font'>Skills</button>
+                <h1 className='skill-title outfit-font font-gray'>Software Languages</h1>
+            </div>
             <div className='skill-container'>
-                <p className='skill-box'><IoLogoHtml5 />
-                    <span>HTML5</span></p>
-                <p className='skill-box'><IoLogoCss3 />CSS3</p>
-                <p className='skill-box'><SiJavascript />JavaScript</p>
-                <p className='skill-box'><FaReact />React</p>
-                <p className='skill-box'><FaBootstrap />Bootstrap</p>
-                <p className='skill-box'><RiTailwindCssFill />Tailwind</p>
-                <p className='skill-box'><TbBrandFramerMotion />Framer Motion</p>
-                <p className='skill-box'><FaGitAlt />Git</p>
-                <p className='skill-box'><SiExpress />Express.js</p>
-                <p className='skill-box'><BiLogoMongodb />MongoDB</p>
-                <p className='skill-box'><SiMysql />MySQL</p>
-                <p className='skill-box'><SiSocketdotio />Socket.io</p>
-                <p className='skill-box'><FaJava />Java</p>
+                <p className="skill-box skill-icon html5"><IoLogoHtml5 /><span>HTML5</span></p>
+                <p className="skill-box skill-icon css3"><IoLogoCss3 /><span>CSS3</span></p>
+                <p className="skill-box skill-icon javascript"><SiJavascript /><span>JavaScript</span></p>
+                <p className="skill-box skill-icon react"><FaReact /><span>React</span></p>
+                <p className="skill-box skill-icon bootstrap"><FaBootstrap /><span>Bootstrap</span></p>
+                <p className="skill-box skill-icon tailwind"><RiTailwindCssFill /><span>Tailwind</span></p>
+                <p className="skill-box skill-icon framer-motion"><TbBrandFramerMotion /><span>Framer Motion</span></p>
+                <p className="skill-box skill-icon git"><FaGitAlt /><span>Git</span></p>
+                <p className="skill-box skill-icon express"><SiExpress /><span>Express.js</span></p>
+                <p className="skill-box skill-icon mongodb"><BiLogoMongodb /><span>MongoDB</span></p>
+                <p className="skill-box skill-icon mysql"><SiMysql /><span>MySQL</span></p>
+                <p className="skill-box skill-icon socketio"><SiSocketdotio /><span>Socket.io</span></p>
+                <p className="skill-box skill-icon node"><FaNodeJs /><span>Node.js</span></p>
             </div>
         </>
     );
