@@ -34,6 +34,11 @@
   padding-right: 10px;
 }
 
+.border-margin {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 #navbar {
   display: flex;
   flex-direction: row;
@@ -333,28 +338,43 @@
 
 .my-form {
   display: flex;
+  flex-direction: column;
+  border: none;
+  background: white;
+  border-radius: 12px;
 }
 
 .contact-h1 {
   color: var(--purple);
   font-size: 25px;
   font-weight: 700;
+  text-align: center;
 }
 
 .contact-h2 {
   color: var(--font-gray);
   font-size: 14px;
   font-weight: 400;
+  text-align: center;
 }
 
 .input-shape {
-  border-color: var(--btn-icon-gray);
+  border: 1px solid;
+  border-color: #9EABB2;
   border-radius: 5px;
   height: 54px;
   width: 306px;
-  padding: 18px 15px 18px 15px;
+  padding-left: 18px;
+  padding-right: 18px;
+  margin-bottom: 8px;
   font-size: 16px;
   font-weight: 400;
+}
+
+.input-msg {
+  height: 131px;
+  justify-content: flex-start;
+  align-self: start;
 }
 
 .submit-btn {
@@ -366,4 +386,67 @@
   width: 306px;
   background: var(--purple-gradient);
   color: white;
+  text-align: center;
+}
+
+.footer-container {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
+.footer-header-container {
+  text-align: center;
+}
+
+.footer-header {
+  border: none;
+  border-radius: 12px;
+  color: var(--font-gray);
+  padding: 4px 20px 4px 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.footer-p {
+  font-size: 17px;
+  font-weight: 400;
+  color: var(--font-gray);
+  text-align: center;
+}
+
+.footer-p-2 {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--font-gray);
+  text-align: center;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: row;
+  font-size: 23.86px;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-contact span {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.footer-btn-container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-btn {
+  border: none;
+  background: none;
+  font-size: 24px;
+  margin-left: 4px;
+  margin-right: 4px;
+  color: var(--font-gray);
 }

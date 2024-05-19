@@ -2,7 +2,7 @@ import '../index.css';
 import Profile from '../images/IMG_2013_Original.jpg'
 import Line from '../images/Line 2.svg'
 import { ImGithub } from "react-icons/im";
-import { FaLinkedinIn } from "react-icons/fa6";
+import { FaLinkedinIn } from "react-icons/fa";                             
 
 const Home = () => {
 
