@@ -19,6 +19,7 @@
   --socket: #010101;
   --node: #68A063;
   --blue-outline: #5D8BFF;
+  --drop-shadow: #9EABB2;
 }
 
 .outfit-font {
@@ -38,6 +39,8 @@
   margin-left: 10px;
   margin-right: 10px;
 }
+
+/* Navgigation Section */
 
 #navbar {
   display: flex;
@@ -179,6 +182,7 @@
 .skill-icon {
   height: 75px;
   width: 75px;
+  font-size: 38.76px;
 }
 /* Individual colors for each skill icon */
 .html5 svg {
@@ -255,12 +259,19 @@
   text-align: center;
 }
 
+.pagination-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .project-pagination {
   height: 61px;
   width: 60px;
   background: #1D1D27;
   border: none;
   border-radius: 10px;
+  margin-top: 20px;
 }
 
 .pagination-btn {
@@ -275,6 +286,8 @@
   border-color: var(--green);
   background: none;
   padding: 18px 34px 18px 34px;
+  margin-bottom: 50px;
+  margin-top: 20px;
 }
 
 .about-title {
@@ -283,10 +296,18 @@
   font-weight: 600;
 }
 
+.about-title span {
+  padding-right: 2px;
+}
+
 .about-subtitle {
   font-size: 20px;
   color: var(--green);
   font-weight: 600;
+}
+
+.about-subtitle span {
+  padding-right: 8px;
 }
 
 .about-p {
@@ -297,7 +318,6 @@
 .resume-btn {
   color: white;
   font-size: 20px;
-  padding: 39px 16px 39px 16px;
   border: none;
   border-radius: 15px;
   background: var(--purple-gradient);
@@ -305,18 +325,31 @@
   width: 155px;
 }
 
+.resume-btn:hover {
+  background: var(--blue-gradient);
+}
+
 .location-btn {
-  height: 53px;
-  width: 53px;
+  height: 43px;
+  width: 43px;
   background: var(--purple-gradient);
   border: none;
   border-radius: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
 }
 
 .contact-header {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.contact-icon-title {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
 }
 
 .google-map {
@@ -326,14 +359,16 @@
   height: 450px;
 }
 
-.google-map iframe {
+.frame-size {
   border: none;
   border-radius: 10px;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  top: 0;
-  position: absolute;
+  height: 450px;
+  margin-bottom: 50px;
+}
+
+.map-location-h1 {
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .my-form {
@@ -342,7 +377,9 @@
   border: none;
   background: white;
   border-radius: 12px;
+  box-shadow: 0 4px 6px -2px var(--drop-shadow);
 }
+
 
 .contact-h1 {
   color: var(--purple);
@@ -356,6 +393,16 @@
   font-size: 14px;
   font-weight: 400;
   text-align: center;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.my-contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .input-shape {
@@ -363,18 +410,21 @@
   border-color: #9EABB2;
   border-radius: 5px;
   height: 54px;
-  width: 306px;
+  width: 75%;
   padding-left: 18px;
   padding-right: 18px;
   margin-bottom: 8px;
   font-size: 16px;
   font-weight: 400;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .input-msg {
   height: 131px;
-  justify-content: flex-start;
-  align-self: start;
+  vertical-align: top;
+  resize: none;
+  padding-top: 15px;
 }
 
 .submit-btn {
@@ -383,10 +433,12 @@
   border: none;
   border-radius: 10px;
   height: 52px;
-  width: 306px;
+  width: 75%;
   background: var(--purple-gradient);
   color: white;
   text-align: center;
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 .footer-container {
@@ -426,7 +478,7 @@
 .footer-contact {
   display: flex;
   flex-direction: row;
-  font-size: 23.86px;
+  font-size: 23px;
   font-weight: 600;
   justify-content: center;
   align-items: center;
@@ -449,4 +501,69 @@
   margin-left: 4px;
   margin-right: 4px;
   color: var(--font-gray);
+}
+
+
+@media (min-width: 768px) {
+
+  /* Navigation section  */
+
+  #navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .nav-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .ball-size {
+    height: 5px;
+    width: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .box-style {
+    width: 167px;
+    height: 59px;
+    color: white;
+    padding: 18px 30px 18px 30px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .home-title {
+    font-size: 42.35px;
+  }
+
+  .home-subtitle {
+    font-size: 80.2px;
+  }
+
+  .skill-title {
+    font-size: 65px;
+    font-weight: 500;
+  }
+
+  .skill-box {
+    width: 132.17px;
+    height: 132.17px;
+  }
+
+  .skill-box span {
+    font-size: 19.03px;
+  }
+
+  .skill-icon {
+    font-size: 67.67px;
+  }
+
+  .project-title {
+    font-size: 64px;
+    font-weight: 600;
+  }
 }

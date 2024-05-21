@@ -5,8 +5,8 @@ const About = () => {
 
     return (
         <>
-            <h1 className='about-title'>&gt;About Me</h1>
-            <h3 className='about-subtitle'>&gt;Ryan Ebanks</h3>
+            <h1 className='about-title'><span>&gt;</span>About Me</h1>
+            <h3 className='about-subtitle'><span>&gt;</span>Ryan Ebanks</h3>
             <p className='about-p'>I'm a Full-Stack Web Developer located in New Jersey with a bachelor's degree in Computer Science. 
             Successfully completed intensive training at the Rutgers coding boot camp, earning a certificate in full-stack web development. 
             A proactive problem-solver dedicated to creating innovative applications, prioritizing mobile-first design principles. 
