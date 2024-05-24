@@ -1,11 +1,53 @@
-import '../index.css';
-import Flux from '../images/flux-project-banner.png'
-import Left from '../images/arrow-left.svg'
-import Right from '../images/arrow-right.svg'
-import smCir from '../images/circle.svg';
-import lgCir from '../images/large-circle.svg';
+import React, { useState } from 'react';
+import { motion } from 'framer-motion';
+import Left from '../images/arrow-left.svg';
+import Right from '../images/arrow-right.svg';
 
-const Projects = () => {
+const Projects = ({ scrollToContact }) => {
+    const projectArr = [
+        {
+            'project': 'FluxCove',
+            'img': require('../images/flux-project-banner.png'),
+            'projectType': 'Full Stack',
+            'link': 'https://www.fluxcove.com',
+            'description': 'React, Tailwind, Express, MongoDB'
+        },
+        {
+            'project': 'Scentimental',
+            'img': require('../images/Scentimental.png'),
+            'projectType': 'Full Stack',
+            'link': 'https://frozen-brushlands-88801.herokuapp.com/',
+            'description': 'Handlebars, JavaScript, Express, MySQL'
+        },
+        {
+            'project': 'Emporify Tech',
+            'img': require('../images/Emporify-tech.png'),
+            'projectType': 'Back End',
+            'link': 'https://github.com/RyanEbanks/emporify-tech',
+            'description': 'Express, MySQL'
+        },
+        {
+            'project': 'HyperCircle',
+            'img': require('../images/HyperCircle.png'),
+            'projectType': 'Back End',
+            'link': 'https://github.com/RyanEbanks/hyper-circle-api',
+            'description': 'Express, MongoDB'
+        },
+    ];
+
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    const nextSlide = () => {
+        setCurrentIndex((prevIndex) =>
+            prevIndex === projectArr.length - 1 ? 0 : prevIndex + 1
+        );
+    };
+
+    const prevSlide = () => {
+        setCurrentIndex((prevIndex) =>
+            prevIndex === 0 ? projectArr.length - 1 : prevIndex - 1
+        );
+    };
 
     return (
         <>
@@ -14,30 +56,40 @@ const Projects = () => {
                 <button className='project-button outfit-font'>Front End</button>
                 <button className='project-button outfit-font'>Back End</button>
                 <button className='project-button outfit-font'>Full Stack</button>
+                <button className='project-button outfit-font'>All</button>
             </div>
             <div className='pagination-container'>
-                <img
-                    src={Flux}
-                    alt='fluxcove project'
-                    className='home-img' />
-
-                    <button className='project-pagination'>
-                        <img
-                            src={Left}
-                            alt='left arrow'
-                            className='pagination-btn' />
+                <div className='project-img-container'>
+                    {projectArr.map((p, index) => (
+                        <motion.li
+                            key={index}
+                            className='list-style'
+                            style={{ display: index === currentIndex ? 'block' : 'none' }}
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ duration: 0.5 }}
+                        >
+                            <a target='_blank' rel='noreferrer' href={`${p.link}`}>
+                                <img
+                                    src={p.img}
+                                    alt={`${p.project} project`}
+                                    className='proj-img'
+                                />
+                                {p.project}
+                            </a>
+                        </motion.li>
+                    ))}
+                </div>
+                {/* Arrow Container */}
+                <div className='pagination-btn-container'>
+                    <button className='project-pagination' onClick={prevSlide}>
+                        <img src={Left} alt='left arrow' className='pagination-btn' />
                     </button>
-                        {/* <img src={smCir} />
-                        <img src={lgCir} />
-                        <img src={smCir} /> */}
-                    <button className='project-pagination'>
-                        <img
-                            src={Right}
-                            alt='right arrow'
-                            className='pagination-btn' />
+                    <button className='project-pagination' onClick={nextSlide}>
+                        <img src={Right} alt='right arrow' className='pagination-btn' />
                     </button>
-
-                <button className='project-contact-btn'>_CONTACT-ME</button>
+                </div>
+                <button className='project-contact-btn' onClick={scrollToContact}>_CONTACT-ME</button>
             </div>
         </>
     );

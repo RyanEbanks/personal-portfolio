@@ -31,8 +31,8 @@ const Footer = () => {
                 <p className='footer-p-2 outfit-font'>You may also find me on these platforms!</p>
             </div>
             <div className='footer-btn-container'>
-                <button className='footer-btn'><FiGithub /></button>
-                <button className='footer-btn'><FaLinkedinIn /></button>
+                <button className='footer-btn'><a target='_blank' rel='noreferrer' href='https://github.com/RyanEbanks'><FiGithub /></a></button>
+                <button className='footer-btn'><a target='_blank' rel='noreferrer' href='https://www.linkedin.com/in/ryan-ebanks-752a92169/'><FaLinkedinIn /></a></button>
             </div>
         </div>
     );
