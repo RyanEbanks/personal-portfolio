@@ -24,20 +24,15 @@ const Navbar = ({ scrollToHome, scrollToSkills, scrollToProjects, scrollToAbout,
                             <img src={Hamburger} alt='Hamburger Icon' />
                         </button>
                     ) : (
-                        <div>
-                            <button onClick={menuSelect}>
+                        <div className='nav-menu-container'>
+                            <button onClick={menuSelect} className='burger-font-size unstyled-btn'>
                                 <IoClose />
                             </button>
-                            <div>
-                                <img src={ball} alt='ball' className='ball-size' />
-                                <button onClick={scrollToHome} className='unstyled-btn'>_home</button>
-                                <img src={ball} alt='ball' className='ball-size' />
-                                <button onClick={scrollToAbout} className='unstyled-btn'>_about-me</button>
-                                <img src={ball} alt='ball' className='ball-size' />
-                                <button onClick={scrollToSkills} className='unstyled-btn'>_skills</button>
-                                <img src={ball} alt='ball' className='ball-size' />
-                                <button onClick={scrollToProjects} className='unstyled-btn'>_projects</button>
-                                <img src={ball} alt='ball' className='ball-size' />
+                            <div className='nav-list-menu'>
+                                <button onClick={()=> {scrollToHome(); menuSelect();}} className='burger-font-size unstyled-btn mini-menu'>_home</button>
+                                <button onClick={()=> {scrollToAbout(); menuSelect();}} className='burger-font-size unstyled-btn mini-menu'>_about-me</button>
+                                <button onClick={()=> {scrollToSkills(); menuSelect();}} className='burger-font-size unstyled-btn mini-menu'>_skills</button>
+                                <button onClick={()=> {scrollToProjects(); menuSelect();}} className='burger-font-size unstyled-btn mini-menu'>_projects</button>
                             </div>
                         </div>
                     )}

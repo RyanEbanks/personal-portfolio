@@ -52,6 +52,45 @@
   display: none;
 }
 
+.nav-menu-container {
+  z-index: 50;
+  background: white;
+  color: black;
+  top: 0;
+  left: 0;
+  width: 99%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  position: absolute;
+  border-bottom-width: 1px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-sizing: border-box;
+
+}
+
+.nav-list-menu {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  padding-top: 50%;
+}
+
+.burger-font-size {
+  font-size: 30px;
+}
+
+.unstyled-btn {
+  border: none;
+  background: none;
+}
+
 .box-style {
   border-radius: 15.4px;
   width: 58px;
@@ -574,11 +613,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-  }
-
-  .unstyled-btn {
-    border: none;
-    background: none;
   }
 
   .ball-size {
