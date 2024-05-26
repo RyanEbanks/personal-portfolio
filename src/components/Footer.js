@@ -1,6 +1,5 @@
 import '../index.css';
 import emailIcon from '../images/email-icon.svg';
-import copyIcon from '../images/copy-icon.svg';
 import phoneIcon from '../images/phone-icon.svg';
 import { FiGithub } from "react-icons/fi";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -8,7 +7,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 const Footer = () => {
 
     return (
-        <div className='footer-container'>
+        <div className='footer-container border-padding'>
             <div className='footer-header-container'>
                 <button className='footer-header outfit-font'>Get in Touch</button>
             </div>
@@ -21,12 +20,12 @@ const Footer = () => {
                 <h1 className='footer-contact outfit-font'>
                     <span><img src={emailIcon} alt='email'className='footer-img' /></span>
                     ryankebanks@gmail.com
-                    <span><img src={copyIcon} alt='copy button'className='footer-img' /></span>
+                    <span><img src={emailIcon} alt='email'className='footer-img' /></span>
                 </h1>
                 <h1 className='footer-contact outfit-font'>
                     <span><img src={phoneIcon} alt='telephone'className='footer-img' /></span>
                     +7329003101
-                    <span><img src={copyIcon} alt='copy button'className='footer-img' /></span>
+                    <span><img src={phoneIcon} alt='telephone'className='footer-img' /></span>
                 </h1>
                 <p className='footer-p-2 outfit-font'>You may also find me on these platforms!</p>
             </div>

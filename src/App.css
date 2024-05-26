@@ -6,9 +6,16 @@ font-family: 'Fira Code', 'monospace' ;
 }
 
 .App {
-  background: white;
+  /* background: white; */
+  background: #FAFAFF;
+  margin-bottom: 0px;
 }
 
 .app-two {
   background: #FAFAFF;
+  margin-top: 0px;
+}
+
+body {
+  margin: 0;
 }

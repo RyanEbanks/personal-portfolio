@@ -21,7 +21,6 @@ function App() {
 
   return (
     <div className='App'>
-      {/* Add in a box shadow later to separate the div */}
       <Navbar
         scrollToHome={() => scrollToSection(homeRef)}
         scrollToSkills={() => scrollToSection(skillsRef)}
@@ -32,11 +31,11 @@ function App() {
       <div className='app-two'>
         <div ref={homeRef}>
           <Home scrollToProjects={() => scrollToSection(projectsRef)} />
-          </div>
+        </div>
         <div ref={skillsRef}><Skills /></div>
         <div ref={projectsRef}>
           <Projects scrollToContact={() => scrollToSection(contactRef)} />
-          </div>
+        </div>
         <div ref={aboutRef}><About /></div>
         <div ref={contactRef}><Contact /></div>
         <Footer />

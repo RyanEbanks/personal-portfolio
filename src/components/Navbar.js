@@ -4,6 +4,7 @@ import { IoClose } from 'react-icons/io5';
 import Phone from '../images/phone.svg';
 import { React, useState } from 'react';
 import ball from '../images/green-circle.svg';
+import Horizontal from '../images/Rectangle 10.svg';
 
 const Navbar = ({ scrollToHome, scrollToSkills, scrollToProjects, scrollToAbout, scrollToContact }) => {
     const [toggleMenu, setToggleMenu] = useState(false);
@@ -15,7 +16,7 @@ const Navbar = ({ scrollToHome, scrollToSkills, scrollToProjects, scrollToAbout,
     return (
         <>
             {/* Hamburger Menu  */}
-            <div id='navbar' className='border'>
+            <div id='navbar' className='border-sm'>
                 {!toggleMenu ?
                     (
                         <button className='box-style blue-bg icon' onClick={() => {
@@ -29,15 +30,17 @@ const Navbar = ({ scrollToHome, scrollToSkills, scrollToProjects, scrollToAbout,
                                 <IoClose />
                             </button>
                             <div className='nav-list-menu'>
-                                <button onClick={()=> {scrollToHome(); menuSelect();}} className='burger-font-size unstyled-btn mini-menu'>_home</button>
-                                <button onClick={()=> {scrollToAbout(); menuSelect();}} className='burger-font-size unstyled-btn mini-menu'>_about-me</button>
-                                <button onClick={()=> {scrollToSkills(); menuSelect();}} className='burger-font-size unstyled-btn mini-menu'>_skills</button>
-                                <button onClick={()=> {scrollToProjects(); menuSelect();}} className='burger-font-size unstyled-btn mini-menu'>_projects</button>
+                                <div className='nav-list-container'>
+                                <button onClick={()=> {scrollToHome(); menuSelect();}} className='burger-font-size unstyled-btn mini-menu'><span><img src={ball} alt='ball' className='ball-size' /></span>home</button>
+                                <button onClick={()=> {scrollToAbout(); menuSelect();}} className='burger-font-size unstyled-btn mini-menu'><span><img src={ball} alt='ball' className='ball-size' /></span>about</button>
+                                <button onClick={()=> {scrollToSkills(); menuSelect();}} className='burger-font-size unstyled-btn mini-menu'><span><img src={ball} alt='ball' className='ball-size' /></span>skills</button>
+                                <button onClick={()=> {scrollToProjects(); menuSelect();}} className='burger-font-size unstyled-btn mini-menu'><span><img src={ball} alt='ball' className='ball-size' /></span>projects</button>
+                                </div>
                             </div>
                         </div>
                     )}
                 <div className='title'>EbanksDev</div>
-                <button className='box-style green-bg icon'>
+                <button className='box-style green-bg icon' onClick={scrollToContact}>
                     <img src={Phone} alt='Hamburger Icon' />
                 </button>
             </div>
@@ -55,6 +58,9 @@ const Navbar = ({ scrollToHome, scrollToSkills, scrollToProjects, scrollToAbout,
                     <img src={ball} alt='ball' className='ball-size' />
                 </div>
                 <button className='box-style green-bg icon' onClick={scrollToContact}>_CONTACT-ME</button>
+            </div>
+            <div>
+                <img src={Horizontal} alt='Horizontal line' className='horiz-line' />
             </div>
         </>
     );

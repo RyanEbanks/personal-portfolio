@@ -50,7 +50,7 @@ const Projects = ({ scrollToContact }) => {
     };
 
     return (
-        <>
+        <div className='border-padding'>
             <h1 className='project-title'>My Projects</h1>
             <div className='project-button-container'>
                 <button className='project-button outfit-font'>Front End</button>
@@ -91,7 +91,7 @@ const Projects = ({ scrollToContact }) => {
                 </div>
                 <button className='project-contact-btn' onClick={scrollToContact}>_CONTACT-ME</button>
             </div>
-        </>
+        </div>
     );
 }
 
