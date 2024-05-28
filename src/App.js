@@ -28,10 +28,10 @@ function App() {
         scrollToAbout={() => scrollToSection(aboutRef)}
         scrollToContact={() => scrollToSection(contactRef)}
       />
-      <div className='app-two'>
         <div ref={homeRef}>
           <Home scrollToProjects={() => scrollToSection(projectsRef)} />
         </div>
+      <div className='app-two'>
         <div ref={skillsRef}><Skills /></div>
         <div ref={projectsRef}>
           <Projects scrollToContact={() => scrollToSection(contactRef)} />

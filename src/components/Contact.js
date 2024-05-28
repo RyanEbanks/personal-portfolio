@@ -65,9 +65,7 @@ const Contact = () => {
                     </form>
                 </div>
             </div>
-            <div>
-                <img src={Horizontal} alt='Horizontal line' className='horiz-line' />
-            </div>
+            <img src={Horizontal} alt='Horizontal line' className='horiz-line' />
         </>
     );
 }

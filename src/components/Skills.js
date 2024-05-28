@@ -23,23 +23,21 @@ const Skills = () => {
                 <h1 className='skill-title outfit-font font-gray'>Software Languages</h1>
             </div>
             <div className='skill-container border-padding'>
-                <p className="skill-box skill-icon html5"><IoLogoHtml5 /><span>HTML5</span></p>
-                <p className="skill-box skill-icon css3"><IoLogoCss3 /><span>CSS3</span></p>
-                <p className="skill-box skill-icon javascript"><SiJavascript /><span>JavaScript</span></p>
-                <p className="skill-box skill-icon react"><FaReact /><span>React</span></p>
-                <p className="skill-box skill-icon bootstrap"><FaBootstrap /><span>Bootstrap</span></p>
-                <p className="skill-box skill-icon tailwind"><RiTailwindCssFill /><span>Tailwind</span></p>
-                <p className="skill-box skill-icon framer-motion"><TbBrandFramerMotion /><span>Framer Motion</span></p>
-                <p className="skill-box skill-icon git"><FaGitAlt /><span>Git</span></p>
-                <p className="skill-box skill-icon express"><SiExpress /><span>Express.js</span></p>
-                <p className="skill-box skill-icon mongodb"><BiLogoMongodb /><span>MongoDB</span></p>
-                <p className="skill-box skill-icon mysql"><SiMysql /><span>MySQL</span></p>
-                <p className="skill-box skill-icon socketio"><SiSocketdotio /><span>Socket.io</span></p>
-                <p className="skill-box skill-icon node"><FaNodeJs /><span>Node.js</span></p>
+                    <p className="skill-box skill-icon html5"><IoLogoHtml5 /><span>HTML5</span></p>
+                    <p className="skill-box skill-icon css3"><IoLogoCss3 /><span>CSS3</span></p>
+                    <p className="skill-box skill-icon javascript"><SiJavascript /><span>JavaScript</span></p>
+                    <p className="skill-box skill-icon react"><FaReact /><span>React</span></p>
+                    <p className="skill-box skill-icon bootstrap"><FaBootstrap /><span>Bootstrap</span></p>
+                    <p className="skill-box skill-icon tailwind"><RiTailwindCssFill /><span>Tailwind</span></p>
+                    <p className="skill-box skill-icon framer-motion"><TbBrandFramerMotion /><span>Framer Motion</span></p>
+                    <p className="skill-box skill-icon git"><FaGitAlt /><span>Git</span></p>
+                    <p className="skill-box skill-icon express"><SiExpress /><span>Express.js</span></p>
+                    <p className="skill-box skill-icon mongodb"><BiLogoMongodb /><span>MongoDB</span></p>
+                    <p className="skill-box skill-icon mysql"><SiMysql /><span>MySQL</span></p>
+                    <p className="skill-box skill-icon socketio"><SiSocketdotio /><span>Socket.io</span></p>
+                    <p className="skill-box skill-icon node"><FaNodeJs /><span>Node.js</span></p>
             </div>
-            <div>
-                <img src={Horizontal} alt='Horizontal line' className='horiz-line' />
-            </div>
+            <img src={Horizontal} alt='Horizontal line' className='horiz-line' />
         </>
     );
 }

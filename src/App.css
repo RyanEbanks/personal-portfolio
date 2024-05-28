@@ -6,13 +6,18 @@ font-family: 'Fira Code', 'monospace' ;
 }
 
 .App {
-  /* background: white; */
-  background: #FAFAFF;
+  background: white;
   margin-bottom: 0px;
+  background-image: url('/src/images/Bg.png');
+  background-size: contain;
+  background-position: center;
 }
 
 .app-two {
-  background: #FAFAFF;
+  background-color: #F6F6FF;
+  background-image: url('/src/images/Bg.png');
+  background-size: contain;
+  background-position: center;
   margin-top: 0px;
 }
 

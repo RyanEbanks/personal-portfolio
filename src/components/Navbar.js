@@ -40,7 +40,7 @@ const Navbar = ({ scrollToHome, scrollToSkills, scrollToProjects, scrollToAbout,
                         </div>
                     )}
                 <div className='title'>EbanksDev</div>
-                <button className='box-style green-bg icon' onClick={scrollToContact}>
+                <button className='box-style green-bg green-btn icon' onClick={scrollToContact}>
                     <img src={Phone} alt='Hamburger Icon' />
                 </button>
             </div>
@@ -57,11 +57,9 @@ const Navbar = ({ scrollToHome, scrollToSkills, scrollToProjects, scrollToAbout,
                     <button onClick={scrollToProjects} className='unstyled-btn'>_projects</button>
                     <img src={ball} alt='ball' className='ball-size' />
                 </div>
-                <button className='box-style green-bg icon' onClick={scrollToContact}>_CONTACT-ME</button>
+                <button className='box-style green-bg green-btn icon' onClick={scrollToContact}>_CONTACT-ME</button>
             </div>
-            <div>
                 <img src={Horizontal} alt='Horizontal line' className='horiz-line' />
-            </div>
         </>
     );
 }
