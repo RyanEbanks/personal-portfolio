@@ -58,7 +58,9 @@ const Projects = ({ scrollToContact }) => {
                                     alt={`${p.project} project`}
                                     className='proj-img'
                                 />
+                                <div className='proj-type-container'>
                                 {p.projectType}
+                                </div>
                             </a>
                         </div>
                     ))}
