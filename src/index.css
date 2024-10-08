@@ -19,14 +19,25 @@
   --mysql: #00758f;
   --socket: #010101;
   --node: #68A063;
-  --java: #ED8B00;
-  --angular: #C3002F;
-  --python: linear-gradient(50deg, #FFD43B, #3776AB);
   --blue-outline: #5D8BFF;
   --drop-shadow: #9EABB2;
   --border-decorations: #606A771F;
 }
 
+/*Manually adjusted colours | Would not work in :root */
+.angular {
+  color: #C3002F;
+}
+
+.java {
+  color: #ED8B00;
+}
+
+.python {
+  color: #3776AB;
+}
+
+/* ******************************* */
 .outfit-font {
   font-family: 'Outfit', sans-serif;
 }
@@ -68,8 +79,11 @@
   display: none;
 }
 
-.angle-svg, .angle-proj-svg, .corner-proj-svg, .title-svg{
- display: none;
+.angle-svg,
+.angle-proj-svg,
+.corner-proj-svg,
+.title-svg {
+  display: none;
 }
 
 .nav-menu-container {
@@ -159,6 +173,8 @@
   font-size: 25px;
 }
 
+/* Home small Screen */
+
 .home-title-container {
   display: flex;
   flex-direction: column;
@@ -212,6 +228,8 @@
   margin-left: 10px;
   margin-right: 10px;
 }
+
+/* Skill Page Small Screen */
 
 .skill-title-container {
   display: flex;
@@ -287,6 +305,11 @@
   font-size: 38.76px;
 }
 
+/* Manually adjusted skill text color */
+.skill-icon-text {
+  color: black;
+}
+
 /* Individual colors for each skill icon */
 .html5 svg {
   color: var(--html);
@@ -339,6 +362,8 @@
 .node svg {
   color: var(--node);
 }
+
+/* Project Page Small Screen */
 
 .project-button {
   border-color: var(--blue-outline);
@@ -440,6 +465,8 @@
   color: white;
 }
 
+/*About Page Small Screen */
+
 .about-container {
   padding-bottom: 20px;
 }
@@ -465,7 +492,7 @@
 }
 
 .about-p {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 400;
 }
 
@@ -506,6 +533,8 @@
 .resume-btn:hover {
   background: var(--blue-gradient);
 }
+
+/* Contact page Small Screen */
 
 .location-btn {
   height: 43px;
@@ -623,6 +652,7 @@
   background: var(--blue-gradient);
 }
 
+/* Footer Page Small Screen  */
 .footer-container {
   padding-top: 24px;
   display: flex;
@@ -674,6 +704,7 @@
 .footer-btn-container {
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 40px;
 }
 
 .footer-btn {
@@ -725,26 +756,34 @@
     margin-right: 40px;
   }
 
-  .angle-svg, .angle-proj-svg, .corner-proj-svg, .title-svg {
+  /* SVG's all around the page  */
+  .angle-svg,
+  .angle-proj-svg,
+  .corner-proj-svg,
+  .title-svg {
     display: inline;
     z-index: 2;
   }
-  
+
   .angle-svg {
     position: absolute;
-    top: 85px; /* Adjust relative to the project section height if more info gets added*/
+    top: 85px;
+    /* Adjust relative to the project section height if more info gets added*/
   }
 
   .angle-proj-svg {
-    position: absolute; /* Set to the absolute position of the relative position of project container */
-    margin-top: -15px; /* Adjust relative to the project section height if more info gets added */
+    position: absolute;
+    /* Set to the absolute position of the relative position of project container */
+    margin-top: -15px;
+    /* Adjust relative to the project section height if more info gets added */
   }
 
   .corner-proj-svg {
-    position: absolute; /* Set to the absolute position of the relative position of project container */
+    position: absolute;
+    /* Set to the absolute position of the relative position of project container */
     top: -1px;
   }
-  
+
   .left-angle {
     left: 40px;
   }
@@ -797,10 +836,14 @@
     font-weight: 500;
   }
 
+  /* Home Page large Screens  */
+  .home-border {
+    background: linear-gradient(to bottom, white 85%, #F6F6FF 15%);
+  }
+
   .home-container {
     display: flex;
     flex-direction: row;
-    background: white;
   }
 
   .home-text-container {
@@ -819,6 +862,10 @@
     font-size: 80.2px;
   }
 
+  .home-p {
+    font-size: 18px;
+  }
+
   .img-sm-screen {
     display: none;
   }
@@ -831,8 +878,8 @@
   }
 
   .img-lg-size {
-    height: 90%;
-    width: 80%;
+    height: 95%;
+    width: 78%;
     margin: auto;
   }
 
@@ -841,13 +888,16 @@
     position: absolute;
     margin-left: 40px;
   }
- /*****************************************/
 
+  /*****************************************/
+
+  /* About Page Large Screens  */
   .about-container {
     display: flex;
     flex-direction: row;
     padding: 40px;
-    position: relative; /*Setting this for the title svgs*/
+    position: relative;
+    /*Setting this for the title svgs*/
   }
 
   .about-title-svg {
@@ -860,11 +910,11 @@
   }
 
   .about-p {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .about-subtitle {
-    font-size: 20px;
+    font-size: 25px;
   }
 
   .about-text-container {
@@ -888,6 +938,7 @@
     height: 80%;
   }
 
+  /* Skill Page Large Screens  */
   .skill-title {
     font-size: 65px;
     font-weight: 500;
@@ -897,7 +948,8 @@
     padding: 20px 40px 20px 40px;
     flex-direction: row;
     justify-content: space-evenly;
-    position: relative; /*Setting this for the title svgs*/
+    position: relative;
+    /*Setting this for the title svgs*/
   }
 
   .skill-box {
@@ -915,10 +967,12 @@
     font-size: 67.67px;
   }
 
+  /* Project page Large Screen  */
   .project-container {
     display: flex;
     flex-direction: column;
-    position: relative; /*Setting this for the right angle svgs & title svgs*/
+    position: relative;
+    /*Setting this for the right angle svgs & title svgs*/
   }
 
   .project-img-container {
@@ -963,11 +1017,14 @@
     color: inherit;
   }
 
+  /* Contact Page Large Screen  */
+
   .contact-container {
     display: flex;
     flex-direction: row;
     padding: 35px;
-    position: relative; /*Setting this for the right angle svgs*/
+    position: relative;
+    /*Setting this for the right angle svgs*/
   }
 
   .contact-header {

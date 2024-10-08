@@ -12,7 +12,7 @@ import { BiLogoMongodb } from "react-icons/bi";
 import { SiMysql } from "react-icons/si";
 import { SiSocketdotio } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
-import { FaJava } from "react-icons/fa";
+import { LiaJava } from "react-icons/lia";
 import { FaPython } from "react-icons/fa";
 import { FaAngular } from "react-icons/fa";
 import Horizontal from '../images/Rectangle 10.svg';
@@ -41,9 +41,10 @@ const Skills = () => {
                     <p className="skill-box skill-icon mysql"><SiMysql /><span>MySQL</span></p>
                     <p className="skill-box skill-icon socketio"><SiSocketdotio /><span>Socket.io</span></p>
                     <p className="skill-box skill-icon node"><FaNodeJs /><span>Node.js</span></p>
-                    <p className="skill-box skill-icon html"><FaJava /><span>Java</span></p>
-                    <p className="skill-box skill-icon python"><FaPython /><span>Python</span></p>
-                    <p className="skill-box skill-icon angular"><FaAngular /><span>Angular</span></p>
+                    {/* Had to adjust these colors in different classes in the css as well as switching text back to black */}
+                    <p className="skill-box skill-icon java"><LiaJava /><span className='skill-icon-text'>Java</span></p>
+                    <p className="skill-box skill-icon python"><FaPython /><span className='skill-icon-text'>Python</span></p>
+                    <p className="skill-box skill-icon angular"><FaAngular /><span className='skill-icon-text'>Angular</span></p>
             </div>
             <img src={Horizontal} alt='Horizontal line' className='horiz-line' />
         </>

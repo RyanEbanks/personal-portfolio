@@ -40,6 +40,13 @@ const Projects = ({ scrollToContact }) => {
             'link': 'https://github.com/RyanEbanks/hyper-circle-api',
             'description': 'Express, MongoDB'
         },
+        {
+            'project': 'AllPro',
+            'img': require('../images/AllPro.png'),
+            'projectType': 'Front End',
+            'link': 'https://all-pro.vercel.app/',
+            'description': 'Angular, JavaScript, HTML, TailwindCss'
+        },
     ];
 
     return (

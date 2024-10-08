@@ -14,8 +14,8 @@ const About = () => {
                 <div className='about-text-container'>
                     <h1 className='about-title'><span>&gt;</span>About Me</h1>
                     <h3 className='about-subtitle'><span>&gt;</span>Ryan Ebanks</h3>
-                    <p className='about-p'>I'm originally from Jamaica but now live in the USA which gives me a
-                        multicultural perspective in the way I think as well as my creative approach.
+                    <p className='about-p'>I am originally from Jamaica and am now a U.S. citizen, which gives me a
+                        multicultural perspective in my thinking and creative approach.
                     </p>
                     <p className='about-p'>Beyond coding, I indulge in a variety of hobbies to fuel my creativity
                         and keep myself active. I enjoy video editing, game designing, playing games, photo editing,

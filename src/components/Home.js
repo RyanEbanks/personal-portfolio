@@ -4,12 +4,12 @@ import MobileProfile from '../images/about-me-mobile.jpg';
 import Line from '../images/Line 2.svg';
 import { ImGithub } from "react-icons/im";
 import { FaLinkedinIn } from "react-icons/fa";
-import Horizontal from '../images/Rectangle 10.svg';
+
 
 const Home = ({ scrollToProjects }) => {
 
     return (
-        <>
+        <div className='home-border'>
             <div className='home-container border-padding'>
                 <div className='home-text-container'>
                     <div className='border'>
@@ -18,7 +18,7 @@ const Home = ({ scrollToProjects }) => {
                             <span className='home-subtitle outfit-font'>Ryan Ebanks</span>
                             <span className='home-line'><img src={Line} alt='Line Icon' /></span>
                         </h1>
-                        <p>I'm a Full-Stack Developer located in New Jersey with a bachelor's degree in Computer Science.
+                        <p className='home-p'>I'm a Full-Stack Developer located in New Jersey with a bachelor's degree in Computer Science.
                             Successfully completed intensive training at the Rutgers coding boot camp, earning a certificate in full-stack web development.
                             A proactive problem-solver dedicated to creating innovative applications, prioritizing mobile-first design principles.
                             Possessing an extreme attention to detail, I excel in ensuring seamless user experiences.
@@ -47,8 +47,7 @@ const Home = ({ scrollToProjects }) => {
                     />
                 </div>
             </div>
-            <img src={Horizontal} alt='Horizontal line' className='horiz-line' />
-        </>
+        </div>
     );
 }
 
