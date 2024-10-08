@@ -12,12 +12,17 @@ import { BiLogoMongodb } from "react-icons/bi";
 import { SiMysql } from "react-icons/si";
 import { SiSocketdotio } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
+import { FaJava } from "react-icons/fa";
+import { FaPython } from "react-icons/fa";
+import { FaAngular } from "react-icons/fa";
 import Horizontal from '../images/Rectangle 10.svg';
+import Title from '../images/skills-title.svg';
 
 const Skills = () => {
 
     return (
         <>
+            <img src={Title} alt='skill title' className='title-svg' />  
             <div className='skill-title-container border-padding'>
                 <button className='skill-btn outfit-font'>Skills</button>
                 <h1 className='skill-title outfit-font font-gray'>Software Languages</h1>
@@ -36,6 +41,9 @@ const Skills = () => {
                     <p className="skill-box skill-icon mysql"><SiMysql /><span>MySQL</span></p>
                     <p className="skill-box skill-icon socketio"><SiSocketdotio /><span>Socket.io</span></p>
                     <p className="skill-box skill-icon node"><FaNodeJs /><span>Node.js</span></p>
+                    <p className="skill-box skill-icon html"><FaJava /><span>Java</span></p>
+                    <p className="skill-box skill-icon python"><FaPython /><span>Python</span></p>
+                    <p className="skill-box skill-icon angular"><FaAngular /><span>Angular</span></p>
             </div>
             <img src={Horizontal} alt='Horizontal line' className='horiz-line' />
         </>

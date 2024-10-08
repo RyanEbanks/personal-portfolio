@@ -5,6 +5,8 @@ import Phone from '../images/phone.svg';
 import { React, useState } from 'react';
 import ball from '../images/green-circle.svg';
 import Horizontal from '../images/Rectangle 10.svg';
+import lAngle from '../images/left-angle.svg';
+import rAngle from '../images/right-angle.svg';
 
 const Navbar = ({ scrollToHome, scrollToSkills, scrollToProjects, scrollToAbout, scrollToContact }) => {
     const [toggleMenu, setToggleMenu] = useState(false);
@@ -59,6 +61,8 @@ const Navbar = ({ scrollToHome, scrollToSkills, scrollToProjects, scrollToAbout,
                 </div>
                 <button className='box-style green-bg green-btn icon' onClick={scrollToContact}>_CONTACT-ME</button>
             </div>
+                <img src={lAngle} alt='left angle border' className='angle-svg left-angle' />
+                <img src={rAngle} alt='right angle border' className='angle-svg right-angle' />
                 <img src={Horizontal} alt='Horizontal line' className='horiz-line' />
         </>
     );

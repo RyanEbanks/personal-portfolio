@@ -3,11 +3,13 @@ import Me from '../images/me.png';
 import Family from '../images/dual pic.png';
 import Horizontal from '../images/Rectangle 10.svg';
 import { motion } from 'framer-motion';
+import Title from '../images/about-title.svg';
 
 const About = () => {
 
     return (
         <>
+            <img src={Title} alt='about title' className='title-svg about-title-svg'/> 
             <div className='about-container border-padding'>
                 <div className='about-text-container'>
                     <h1 className='about-title'><span>&gt;</span>About Me</h1>

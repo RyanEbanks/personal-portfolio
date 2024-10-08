@@ -3,6 +3,11 @@
 // import Left from '../images/arrow-left.svg';
 // import Right from '../images/arrow-right.svg';
 import Horizontal from '../images/Rectangle 10.svg';
+import lAngle from '../images/left-angle.svg';
+import rAngle from '../images/right-angle.svg';
+import lCorner from '../images/left-corner.svg';
+import rCorner from '../images/right-corner.svg';
+import Title from '../images/project-title.svg';
 
 const Projects = ({ scrollToContact }) => {
 
@@ -18,7 +23,7 @@ const Projects = ({ scrollToContact }) => {
             'project': 'Scentimental',
             'img': require('../images/Scentimental.png'),
             'projectType': 'Full Stack',
-            'link': 'https://frozen-brushlands-88801.herokuapp.com/',
+            'link': 'https://www.youtube.com/watch?v=3zjsBKo1IlY',
             'description': 'Handlebars, JavaScript, Express, MySQL'
         },
         {
@@ -39,7 +44,10 @@ const Projects = ({ scrollToContact }) => {
 
     return (
         <>
+        <img src={Title} alt='project title' className='title-svg' /> 
         <div className='project-container border-padding'>
+        <img src={lCorner} alt='left top angle border' className='corner-proj-svg left-corner' />
+        <img src={rCorner} alt='right top angle border' className='corner-proj-svg right-corner' />
             <h1 className='project-title'>My Projects</h1>
             <div className='project-button-container'>
                 {/* <button className='project-button outfit-font'>Front End</button>
@@ -77,6 +85,8 @@ const Projects = ({ scrollToContact }) => {
                 <button className='project-contact-btn' onClick={scrollToContact}>_CONTACT-ME</button>
             </div>
         </div>
+            <img src={lAngle} alt='left angle border' className='angle-proj-svg left-angle' />
+            <img src={rAngle} alt='right angle border' className='angle-proj-svg right-angle' />
             <img src={Horizontal} alt='Horizontal line' className='horiz-line' />
         </>
     );
