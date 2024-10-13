@@ -37,6 +37,10 @@
   color: #3776AB;
 }
 
+.typeS {
+  color: #007acc;
+}
+
 /* ******************************* */
 .outfit-font {
   font-family: 'Outfit', sans-serif;
@@ -858,6 +862,29 @@
     font-size: 42.35px;
   }
 
+  /* Typing animation */
+  .home-text-animation {
+    white-space: nowrap;
+    overflow: hidden;
+    width: 21.5%;
+    animation: 
+      typing 1s,
+      cursor .4s
+  }
+
+  /* Cursor blinking */
+  @keyframes cursor {
+    50% { border-color: transparent; }
+    
+  }
+
+  /* Typing Effect  */
+  @keyframes typing {
+    from { width: 0}
+    
+  }
+/* ******************** */
+
   .home-subtitle {
     font-size: 80.2px;
   }
@@ -935,7 +962,7 @@
   .about-img {
     display: flex;
     width: 70%;
-    height: 80%;
+    height: 90%;
   }
 
   /* Skill Page Large Screens  */
@@ -971,9 +998,9 @@
   .project-container {
     display: flex;
     flex-direction: column;
-    position: relative;
-    /*Setting this for the right angle svgs & title svgs*/
+    position: relative; /*Setting this for the right angle svgs & title svgs*/
   }
+  
 
   .project-img-container {
     margin-left: 40px;
@@ -1034,6 +1061,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .contact-h2 {
+    font-size: 16px;
   }
 
   .frame-size {

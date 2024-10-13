@@ -14,8 +14,9 @@ font-family: 'Fira Code', 'monospace' ;
 }
 
 .app-two {
-  background-color: #F6F6FF;
+  /* background-color: #F6F6FF; */
   background-image: url('/src/images/Bg.png');
+  background-color: rgba(160, 160, 255, 0.1); /* 50% opacity comes out to #F6F6FF */
   background-size: contain;
   background-position: center;
   margin-top: 0px;
