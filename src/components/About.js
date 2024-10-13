@@ -21,7 +21,7 @@ const About = () => {
                         and keep myself active. I enjoy video editing, game designing, playing games, photo editing,
                         exercising, various outdoor activities, and spending time with my family.
                     </p>
-                    <button className='resume-btn'><a href='/resume/ryanebanks.docx' download='ryanebanks'>RESUME</a></button>
+                    <button className='resume-btn'><a href='/resume/Ryan Ebanks Resume.pdf' target='_blank' rel='noopener norefferrer'>RESUME</a></button>
                 </div>
                 <div className='about-img-container'>
                     <img
