@@ -47,6 +47,13 @@ const Projects = ({ scrollToContact }) => {
             'link': 'https://all-pro.vercel.app/',
             'description': 'Angular, JavaScript, HTML, TailwindCss'
         },
+        {
+            'project': '1oceanfund',
+            'img': require('../images/1ocean.png'),
+            'projectType': 'Front End',
+            'link': 'https://1oceanfund.org/',
+            'description': 'Wordpress: updating and maintaining'
+        },
     ];
 
     return (
