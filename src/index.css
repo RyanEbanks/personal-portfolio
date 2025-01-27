@@ -400,12 +400,14 @@
 
 .project-img-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   text-align: center;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  height: 30vh;
+  width: 80%;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .proj-img-motion {
@@ -425,6 +427,8 @@
   margin-right: auto;
   display: block;
   text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 
@@ -814,13 +818,21 @@
   .nav-2 {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    gap: 40px;
+  }
+
+  .nav-2-btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
   }
 
   .unstyled-btn:hover {
-    background: var(--border-decorations);
-    padding: 8px;
-    border-radius: 10px;
+    font-weight: bold;
   }
 
   .ball-size {
@@ -1009,6 +1021,12 @@
   .project-img-container {
     margin-left: 40px;
     margin-right: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+    width: 80%;
+    height: 100%;
   }
 
   .project-button:hover {
@@ -1027,11 +1045,21 @@
   }
 
   .proj-img {
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
+    border-radius: 10px;
+    width: 606px;
+    height: 350px;
+    object-fit: cover;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Ensures smooth scaling effect */
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
-  .proj-type-container {
+  .proj-img:hover {
+    transform: scale(1.05); /* Increases size by 5% on hover */
+  }
+
+  /* .proj-type-container {
     display: block;
     color: white;
     background: var(--blue-gradient);
@@ -1041,7 +1069,7 @@
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-  }
+  } */
 
   a {
     text-decoration: none;

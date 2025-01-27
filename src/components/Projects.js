@@ -13,36 +13,22 @@ const Projects = ({ scrollToContact }) => {
 
     const projectArr = [
         {
+            'project': 'hwni',
+            'img': require('../images/hwni.png'),
+            'projectType': 'Full-Stack',
+            'link': 'https://main.d16sl4e0bj77nf.amplifyapp.com/',
+            'description': 'React, Tailwind, Flask, PostgreSQL'
+        },
+        {
             'project': 'FluxCove',
-            'img': require('../images/flux-project-banner.png'),
+            'img': require('../images/fluxcove.png'),
             'projectType': 'Full Stack',
             'link': 'https://www.fluxcove.com',
             'description': 'React, Tailwind, Express, MongoDB'
         },
         {
-            'project': 'Scentimental',
-            'img': require('../images/Scentimental.png'),
-            'projectType': 'Full Stack',
-            'link': 'https://www.youtube.com/watch?v=3zjsBKo1IlY',
-            'description': 'Handlebars, JavaScript, Express, MySQL'
-        },
-        {
-            'project': 'Emporify Tech',
-            'img': require('../images/Emporify-tech.png'),
-            'projectType': 'Back End',
-            'link': 'https://github.com/RyanEbanks/emporify-tech',
-            'description': 'Express, MySQL'
-        },
-        {
-            'project': 'HyperCircle',
-            'img': require('../images/HyperCircle.png'),
-            'projectType': 'Back End',
-            'link': 'https://github.com/RyanEbanks/hyper-circle-api',
-            'description': 'Express, MongoDB'
-        },
-        {
             'project': 'AllPro',
-            'img': require('../images/AllPro.png'),
+            'img': require('../images/allpro.png'),
             'projectType': 'Front End',
             'link': 'https://all-pro.vercel.app/',
             'description': 'Angular, JavaScript, HTML, TailwindCss'
@@ -54,21 +40,36 @@ const Projects = ({ scrollToContact }) => {
             'link': 'https://1oceanfund.org/',
             'description': 'Wordpress: updating and maintaining'
         },
+        {
+            'project': 'Scentimental',
+            'img': require('../images/scentimental.png'),
+            'projectType': 'Full Stack',
+            'link': 'https://www.youtube.com/watch?v=3zjsBKo1IlY',
+            'description': 'Handlebars, JavaScript, Express, MySQL'
+        },
+        {
+            'project': 'Emporify Tech',
+            'img': require('../images/emporifytech.png'),
+            'projectType': 'Back End',
+            'link': 'https://github.com/RyanEbanks/emporify-tech',
+            'description': 'Express, MySQL'
+        },
+        {
+            'project': 'HyperCircle',
+            'img': require('../images/hypercircle.png'),
+            'projectType': 'Back End',
+            'link': 'https://github.com/RyanEbanks/hyper-circle-api',
+            'description': 'Express, MongoDB'
+        },
     ];
 
     return (
-        <>
+        <div>
         <img src={Title} alt='project title' className='title-svg' /> 
         <div className='project-container border-padding'>
         <img src={lCorner} alt='left top angle border' className='corner-proj-svg left-corner' />
         <img src={rCorner} alt='right top angle border' className='corner-proj-svg right-corner' />
             <h1 className='project-title'>My Projects</h1>
-            <div className='project-button-container'>
-                {/* <button className='project-button outfit-font'>Front End</button>
-                <button className='project-button outfit-font'>Back End</button>
-                <button className='project-button outfit-font'>Full Stack</button>
-                <button className='project-button outfit-font'>All</button> */}
-            </div>
             <div className='pagination-container'>
                 <div className='project-img-container'>
                     {projectArr.map((p) => (
@@ -80,29 +81,20 @@ const Projects = ({ scrollToContact }) => {
                                     alt={`${p.project} project`}
                                     className='proj-img'
                                 />
-                                <div className='proj-type-container'>
+                                {/* <div className='proj-type-container'>
                                 {p.projectType}
-                                </div>
+                                </div> */}
                             </a>
                         </div>
                     ))}
                 </div>
-                {/* Arrow Container */}
-                {/* <div className='pagination-btn-container'>
-                    <button className='project-pagination' onClick={prevSlide}>
-                        <img src={Left} alt='left arrow' className='pagination-btn' />
-                    </button>
-                    <button className='project-pagination' onClick={nextSlide}>
-                        <img src={Right} alt='right arrow' className='pagination-btn' />
-                    </button>
-                </div> */}
                 <button className='project-contact-btn' onClick={scrollToContact}>_CONTACT-ME</button>
             </div>
         </div>
             <img src={lAngle} alt='left angle border' className='angle-proj-svg left-angle' />
             <img src={rAngle} alt='right angle border' className='angle-proj-svg right-angle' />
             <img src={Horizontal} alt='Horizontal line' className='horiz-line' />
-        </>
+        </div>
     );
 }
 

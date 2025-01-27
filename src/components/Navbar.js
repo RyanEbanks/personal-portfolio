@@ -33,10 +33,10 @@ const Navbar = ({ scrollToHome, scrollToSkills, scrollToProjects, scrollToAbout,
                             </button>
                             <div className='nav-list-menu'>
                                 <div className='nav-list-container'>
-                                <button onClick={()=> {scrollToHome(); menuSelect();}} className='burger-font-size unstyled-btn mini-menu'><span><img src={ball} alt='ball' className='ball-size' /></span>home</button>
-                                <button onClick={()=> {scrollToAbout(); menuSelect();}} className='burger-font-size unstyled-btn mini-menu'><span><img src={ball} alt='ball' className='ball-size' /></span>about</button>
-                                <button onClick={()=> {scrollToSkills(); menuSelect();}} className='burger-font-size unstyled-btn mini-menu'><span><img src={ball} alt='ball' className='ball-size' /></span>skills</button>
-                                <button onClick={()=> {scrollToProjects(); menuSelect();}} className='burger-font-size unstyled-btn mini-menu'><span><img src={ball} alt='ball' className='ball-size' /></span>projects</button>
+                                    <button onClick={() => { scrollToHome(); menuSelect(); }} className='burger-font-size unstyled-btn mini-menu'><span><img src={ball} alt='ball' className='ball-size' /></span>home</button>
+                                    <button onClick={() => { scrollToAbout(); menuSelect(); }} className='burger-font-size unstyled-btn mini-menu'><span><img src={ball} alt='ball' className='ball-size' /></span>about</button>
+                                    <button onClick={() => { scrollToSkills(); menuSelect(); }} className='burger-font-size unstyled-btn mini-menu'><span><img src={ball} alt='ball' className='ball-size' /></span>skills</button>
+                                    <button onClick={() => { scrollToProjects(); menuSelect(); }} className='burger-font-size unstyled-btn mini-menu'><span><img src={ball} alt='ball' className='ball-size' /></span>projects</button>
                                 </div>
                             </div>
                         </div>
@@ -49,21 +49,28 @@ const Navbar = ({ scrollToHome, scrollToSkills, scrollToProjects, scrollToAbout,
             <div id='navbar-lg' className='border'>
                 <div className='title'>EbanksDev</div>
                 <div className='nav-2'>
-                    <img src={ball} alt='ball' className='ball-size' />
-                    <button onClick={scrollToHome} className='unstyled-btn'>_home</button>
-                    <img src={ball} alt='ball' className='ball-size' />
-                    <button onClick={scrollToAbout} className='unstyled-btn'>_about-me</button>
-                    <img src={ball} alt='ball' className='ball-size' />
-                    <button onClick={scrollToSkills} className='unstyled-btn'>_skills</button>
-                    <img src={ball} alt='ball' className='ball-size' />
-                    <button onClick={scrollToProjects} className='unstyled-btn'>_projects</button>
-                    <img src={ball} alt='ball' className='ball-size' />
+                    <div className='nav-2-btn-container'>
+                        <img src={ball} alt='ball' className='ball-size' />
+                        <button onClick={scrollToHome} className='unstyled-btn'>_home</button>
+                    </div>
+                    <div className='nav-2-btn-container'>
+                        <img src={ball} alt='ball' className='ball-size' />
+                        <button onClick={scrollToAbout} className='unstyled-btn'>_about-me</button>
+                    </div>
+                    <div className='nav-2-btn-container'>
+                        <img src={ball} alt='ball' className='ball-size' />
+                        <button onClick={scrollToSkills} className='unstyled-btn'>_skills</button>
+                    </div>
+                    <div className='nav-2-btn-container'>
+                        <img src={ball} alt='ball' className='ball-size' />
+                        <button onClick={scrollToProjects} className='unstyled-btn'>_projects</button>
+                    </div>
                 </div>
                 <button className='box-style green-bg green-btn icon' onClick={scrollToContact}>_CONTACT-ME</button>
             </div>
-                <img src={lAngle} alt='left angle border' className='angle-svg left-angle' />
-                <img src={rAngle} alt='right angle border' className='angle-svg right-angle' />
-                <img src={Horizontal} alt='Horizontal line' className='horiz-line' />
+            <img src={lAngle} alt='left angle border' className='angle-svg left-angle' />
+            <img src={rAngle} alt='right angle border' className='angle-svg right-angle' />
+            <img src={Horizontal} alt='Horizontal line' className='horiz-line' />
         </>
     );
 }
