@@ -28,7 +28,7 @@ const Projects = ({ scrollToContact }) => {
         },
         {
             'project': 'AllPro',
-            'img': require('../images/newallpro.png'),
+            'img': require('../images/all-pro.png'),
             'projectType': 'Front End',
             'link': 'https://all-pro.vercel.app/',
             'description': 'Angular, JavaScript, HTML, TailwindCss'
