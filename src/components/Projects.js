@@ -42,21 +42,21 @@ const Projects = ({ scrollToContact }) => {
         },
         {
             'project': 'Scentimental',
-            'img': require('../images/scentimental.png'),
+            'img': require('../images/newer-scentimental.png'),
             'projectType': 'Full Stack',
             'link': 'https://www.youtube.com/watch?v=3zjsBKo1IlY',
             'description': 'Handlebars, JavaScript, Express, MySQL'
         },
         {
             'project': 'Emporify Tech',
-            'img': require('../images/emporifytech.png'),
+            'img': require('../images/newemporifytech.png'),
             'projectType': 'Back End',
             'link': 'https://github.com/RyanEbanks/emporify-tech',
             'description': 'Express, MySQL'
         },
         {
             'project': 'HyperCircle',
-            'img': require('../images/hypercircle.png'),
+            'img': require('../images/newhypercircle.png'),
             'projectType': 'Back End',
             'link': 'https://github.com/RyanEbanks/hyper-circle-api',
             'description': 'Express, MongoDB'
