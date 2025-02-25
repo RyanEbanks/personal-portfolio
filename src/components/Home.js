@@ -15,13 +15,13 @@ const Home = ({ scrollToProjects }) => {
             opacity: [1, 0, 0, 0, 0, 0, 1], // Fully visible, then fades out
             x: ['0%', '50%', '50%', '1%', '0%', '0%', '0%'], // Move from 0% to 50%, fades away then back to 0. Stays in same position at times to avoid effect of moving
             transition: {
-                duration: 3, 
+                duration: 3,
                 ease: 'easeInOut',
                 delay: 1, // Start 1 second after page load
             },
         }
     };
-    
+
 
     return (
         <div className='home-border'>
@@ -31,6 +31,7 @@ const Home = ({ scrollToProjects }) => {
                         <h1 className='home-title-container'>
                             <span className='home-title outfit-font home-text-animation'>Hello, I'm</span>
                             <span className='home-subtitle outfit-font'>Ryan Ebanks</span>
+                            <span className='home-subtitle-2 outfit-font'>Frontend Developer</span>
                             {/* <span className='home-line'><img src={Line} alt='Line Icon' /></span> */}
                             <motion.span
                                 className='home-line'
@@ -41,10 +42,10 @@ const Home = ({ scrollToProjects }) => {
                                 <img src={Line} alt='Line Icon' />
                             </motion.span>
                         </h1>
-                        <p className='home-p'>I'm a Full-Stack Developer located in New Jersey with a bachelor's degree in Computer Science.
-                            Successfully completed intensive training at the Rutgers coding boot camp, earning a certificate in full-stack web development.
-                            A proactive problem-solver dedicated to creating innovative applications, prioritizing mobile-first design principles.
-                            Possessing an extreme attention to detail, I excel in ensuring seamless user experiences.
+                        <p className='home-p'>
+                            I specialize in <span className='home-p-span'>React</span>, <span className='home-p-span'>TypeScript</span> and <span className='home-p-span'>Tailwind</span> with <span className='home-p-span'>Jest</span> for Unit Testing.
+                            I also have back-end experience such as <span className='home-p-span'>Express.js</span>, <span className='home-p-span'>Flask</span>, <span className='home-p-span'>SQL</span> and <span className='home-p-span'>NoSQL</span> Databases.
+                            I've deployed applications to <span className='home-p-span'>Vercel</span>, <span className='home-p-span'>AWS</span> and <span className='home-p-span'>Heroku</span>.
                         </p>
                     </div>
                     <div className='border'>

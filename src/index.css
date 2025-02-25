@@ -905,8 +905,17 @@
     font-size: 80.2px;
   }
 
+  .home-subtitle-2 {
+    color: var(--css);
+  }
+
   .home-p {
-    font-size: 18px;
+    font-size: 1.5rem;
+  }
+
+  .home-p-span {
+    color: var(--css);
+    font-weight: 600;
   }
 
   .img-sm-screen {

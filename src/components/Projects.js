@@ -28,7 +28,7 @@ const Projects = ({ scrollToContact }) => {
         },
         {
             'project': 'AllPro',
-            'img': require('../images/all-pro.png'),
+            'img': require('../images/allpro.png'),
             'projectType': 'Front End',
             'link': 'https://all-pro.vercel.app/',
             'description': 'Angular, JavaScript, HTML, TailwindCss'
@@ -42,21 +42,21 @@ const Projects = ({ scrollToContact }) => {
         },
         {
             'project': 'Scentimental',
-            'img': require('../images/newer-scentimental.png'),
+            'img': require('../images/scentimental.png'),
             'projectType': 'Full Stack',
             'link': 'https://www.youtube.com/watch?v=3zjsBKo1IlY',
             'description': 'Handlebars, JavaScript, Express, MySQL'
         },
         {
             'project': 'Emporify Tech',
-            'img': require('../images/newemporifytech.png'),
+            'img': require('../images/emporifytech.png'),
             'projectType': 'Back End',
             'link': 'https://github.com/RyanEbanks/emporify-tech',
             'description': 'Express, MySQL'
         },
         {
             'project': 'HyperCircle',
-            'img': require('../images/newhypercircle.png'),
+            'img': require('../images/hyper-circle.png'),
             'projectType': 'Back End',
             'link': 'https://github.com/RyanEbanks/hyper-circle-api',
             'description': 'Express, MongoDB'
