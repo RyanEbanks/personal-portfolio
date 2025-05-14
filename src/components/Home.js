@@ -29,7 +29,7 @@ const Home = ({ scrollToProjects }) => {
                 <div className='home-text-container'>
                     <div className='border'>
                         <h1 className='home-title-container'>
-                            <span className='home-title outfit-font home-text-animation'>Hello, I'm</span>
+                            <span className='home-title outfit-font home-text-animation test-width'>Hello, I'm</span>
                             <span className='home-subtitle outfit-font'>Ryan Ebanks</span>
                             <span className='home-subtitle-2 outfit-font'>Frontend Developer</span>
                             {/* <span className='home-line'><img src={Line} alt='Line Icon' /></span> */}

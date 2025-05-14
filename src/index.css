@@ -1270,7 +1270,7 @@
   .home-text-animation {
     white-space: nowrap;
     overflow: hidden;
-    width: 21.5%;
+    width: 100%;
     animation: 
       typing 1s,
       cursor .4s
