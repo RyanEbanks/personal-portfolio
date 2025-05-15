@@ -61,6 +61,13 @@ const Projects = ({ scrollToContact }) => {
             'link': 'https://github.com/RyanEbanks/hyper-circle-api',
             'description': 'Express, MongoDB'
         },
+        {
+            'project': 'Expense Tracker',
+            'img': require('../images/expense-tracker.png'),
+            'projectType': 'FullStack',
+            'link': 'https://myexpensetracker-hwf2hzeqfsgzd7dv.canadacentral-01.azurewebsites.net/',
+            'description': 'C#, ASP.NET'
+        },
     ];
 
     return (

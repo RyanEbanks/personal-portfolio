@@ -18,6 +18,8 @@ import { SiTypescript } from "react-icons/si";
 import { FaAngular } from "react-icons/fa";
 import Horizontal from '../images/Rectangle 10.svg';
 import Title from '../images/skills-title.svg';
+import { SiDotnet } from "react-icons/si";
+import { TbBrandCSharp } from "react-icons/tb";
 
 const Skills = () => {
 
@@ -44,6 +46,8 @@ const Skills = () => {
                     <p className="skill-box skill-icon mysql"><SiMysql /><span>MySQL</span></p>
                     <p className="skill-box skill-icon socketio"><SiSocketdotio /><span>Socket.io</span></p>
                     <p className="skill-box skill-icon node"><FaNodeJs /><span>Node.js</span></p>
+                    <p className="skill-box skill-icon dotnet"><SiDotnet /><span>ASP.NET</span></p>
+                    <p className="skill-box skill-icon csharp"><TbBrandCSharp /><span>C#</span></p>
                     {/* Had to adjust these colors in different classes in the css as well as switching text back to black */}
                     {/* <p className="skill-box skill-icon java"><LiaJava /><span className='skill-icon-text'>Java</span></p> */}
                     {/* <p className="skill-box skill-icon python"><FaPython /><span className='skill-icon-text'>Python</span></p> */}

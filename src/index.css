@@ -19,6 +19,8 @@
   --mysql: #00758f;
   --socket: #010101;
   --node: #68A063;
+  --dotnet: #502ad4;
+  --csharp: #692178;
   --blue-outline: #5D8BFF;
   --drop-shadow: #9EABB2;
   --border-decorations: #606A771F;
@@ -368,6 +370,14 @@
 
 .node svg {
   color: var(--node);
+}
+
+.dotnet svg {
+  color: var(--dotnet);
+}
+
+.csharp svg {
+  color: var(--csharp);
 }
 
 /* Project Page Small Screen */
@@ -1065,7 +1075,7 @@
   .proj-img {
     border-radius: 10px;
     width: 606px;
-    height: 350px;
+    height: 340px;
     object-fit: cover;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease; /* Ensures smooth scaling effect */
