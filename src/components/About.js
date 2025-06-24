@@ -14,14 +14,14 @@ const About = () => {
                 <div className='about-text-container'>
                     <h1 className='about-title'><span>&gt;</span>About Me</h1>
                     <h3 className='about-subtitle'><span>&gt;</span>Ryan Ebanks</h3>
-                    <p className='about-p'>I am originally from Jamaica and am now a U.S. citizen, which gives me a
+                    <p className='about-p'>I've lived in Jamaica and the US which gives me a
                         multicultural perspective in my thinking and creative approach.
                     </p>
                     <p className='about-p'>Beyond coding, I indulge in a variety of hobbies to fuel my creativity
                         and keep myself active. I enjoy video editing, game designing, playing games, photo editing,
                         exercising, various outdoor activities, and spending time with my family.
                     </p>
-                    <button className='resume-btn'><a href='/resume/Ryan Ebanks Resume.pdf' target='_blank' rel='noopener norefferrer'>RESUME</a></button>
+                    <button className='resume-btn'><a href='/resume/RyanResume.pdf' target='_blank' rel='noopener noreferrer'>RESUME</a></button>
                 </div>
                 <div className='about-img-container'>
                     <img

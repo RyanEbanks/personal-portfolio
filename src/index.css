@@ -19,20 +19,22 @@
   --mysql: #00758f;
   --socket: #010101;
   --node: #68A063;
-  --dotnet: #502ad4;
-  --csharp: #692178;
+  --springboot: #6DB33F;
+  --java: #007396;
+  --excel: #21A366;
+  --tableau: #538A9C;
   --blue-outline: #5D8BFF;
   --drop-shadow: #9EABB2;
   --border-decorations: #606A771F;
 }
 
+a {
+  color: inherit;    
+  text-decoration: none; 
+}
 /*Manually adjusted colours | Would not work in :root */
 .angular {
   color: #C3002F;
-}
-
-.java {
-  color: #ED8B00;
 }
 
 .python {
@@ -372,12 +374,20 @@
   color: var(--node);
 }
 
-.dotnet svg {
-  color: var(--dotnet);
+.springboot svg {
+  color: var(--springboot);
 }
 
-.csharp svg {
-  color: var(--csharp);
+.java svg {
+  color: var(--java);
+}
+
+.excel svg {
+  color: var(--excel);
+}
+
+.tableau svg {
+  color: var(--tableau);
 }
 
 /* Project Page Small Screen */
@@ -1302,7 +1312,7 @@
   .home-subtitle {
     font-size: 80.2px;
   }
-
+  
   .home-subtitle-2 {
     color: var(--css);
   }

@@ -23,7 +23,7 @@ import { FaJava } from "react-icons/fa6";
 import { PiMicrosoftExcelLogoFill } from "react-icons/pi";
 import { SiTableau } from "react-icons/si";
 
-const Skills = () => {
+const SkillsDA = () => {
 
     return (
         <>
@@ -33,23 +33,7 @@ const Skills = () => {
                 <h1 className='skill-title outfit-font font-gray'>Tools & Technologies</h1>
             </div>
             <div className='skill-container border-padding'>
-                    <p className="skill-box skill-icon html5"><IoLogoHtml5 /><span>HTML5</span></p>
-                    <p className="skill-box skill-icon css3"><IoLogoCss3 /><span>CSS3</span></p>
-                    <p className="skill-box skill-icon javascript"><SiJavascript /><span>JavaScript</span></p>
-                    <p className="skill-box skill-icon typeS"><SiTypescript /><span className='skill-icon-text'>TypeScript</span></p>
-                    <p className="skill-box skill-icon react"><FaReact /><span>React</span></p>
-                    <p className="skill-box skill-icon angular"><FaAngular /><span className='skill-icon-text'>Angular</span></p>
-                    <p className="skill-box skill-icon bootstrap"><FaBootstrap /><span>Bootstrap</span></p>
-                    <p className="skill-box skill-icon tailwind"><RiTailwindCssFill /><span>Tailwind</span></p>
-                    <p className="skill-box skill-icon framer-motion"><TbBrandFramerMotion /><span>Framer Motion</span></p>
-                    <p className="skill-box skill-icon git"><FaGitAlt /><span>Git</span></p>
-                    <p className="skill-box skill-icon express"><SiExpress /><span>Express.js</span></p>
-                    <p className="skill-box skill-icon mongodb"><BiLogoMongodb /><span>MongoDB</span></p>
                     <p className="skill-box skill-icon mysql"><SiMysql /><span>MySQL</span></p>
-                    <p className="skill-box skill-icon socketio"><SiSocketdotio /><span>Socket.io</span></p>
-                    <p className="skill-box skill-icon node"><FaNodeJs /><span>Node.js</span></p>
-                    <p className="skill-box skill-icon springboot"><SiSpringboot /><span>Springboot</span></p>
-                    <p className="skill-box skill-icon java"><FaJava /><span>Java</span></p>
                     <p className="skill-box skill-icon excel"><PiMicrosoftExcelLogoFill /><span>Excel</span></p>
                     <p className="skill-box skill-icon tableau"><SiTableau /><span>Tableau</span></p>
                     {/* Had to adjust these colors in different classes in the css as well as switching text back to black */}
@@ -61,4 +45,4 @@ const Skills = () => {
     );
 }
 
-export default Skills;
+export default SkillsDA;

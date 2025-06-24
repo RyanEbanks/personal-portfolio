@@ -37,6 +37,7 @@ const Navbar = ({ scrollToHome, scrollToSkills, scrollToProjects, scrollToAbout,
                                     <button onClick={() => { scrollToAbout(); menuSelect(); }} className='burger-font-size unstyled-btn mini-menu'><span><img src={ball} alt='ball' className='ball-size' /></span>about</button>
                                     <button onClick={() => { scrollToSkills(); menuSelect(); }} className='burger-font-size unstyled-btn mini-menu'><span><img src={ball} alt='ball' className='ball-size' /></span>skills</button>
                                     <button onClick={() => { scrollToProjects(); menuSelect(); }} className='burger-font-size unstyled-btn mini-menu'><span><img src={ball} alt='ball' className='ball-size' /></span>projects</button>
+                                    <button className='burger-font-size unstyled-btn mini-menu'><span><img src={ball} alt='ball' className='ball-size' /></span><a href='/da'>data_analyst</a></button>
                                 </div>
                             </div>
                         </div>
@@ -64,6 +65,10 @@ const Navbar = ({ scrollToHome, scrollToSkills, scrollToProjects, scrollToAbout,
                     <div className='nav-2-btn-container'>
                         <img src={ball} alt='ball' className='ball-size' />
                         <button onClick={scrollToProjects} className='unstyled-btn'>_projects</button>
+                    </div>
+                    <div className='nav-2-btn-container'>
+                        <img src={ball} alt='ball' className='ball-size' />
+                        <button className='unstyled-btn'><a href='/da'>data_analyst</a></button>
                     </div>
                 </div>
                 <button className='box-style green-bg green-btn icon' onClick={scrollToContact}>_CONTACT-ME</button>

@@ -13,7 +13,7 @@ const Footer = () => {
             </div>
             <div>
                 <p className='footer-p outfit-font'>What's next? Feel free to reach out to me if you're looking for
-                    a developer, have a query, or simply want to connect.
+                    a developer, data analyst, have a query, or simply want to connect.
                 </p>
             </div>
             <div className='footer-contact-container'>
