@@ -52,7 +52,7 @@ const Navbar = ({ scrollToHome, scrollToSkills, scrollToProjects, scrollToAbout,
                 <div className='nav-2'>
                     <div className='nav-2-btn-container'>
                         <img src={ball} alt='ball' className='ball-size' />
-                        <button onClick={scrollToHome} className='unstyled-btn'>_home</button>
+                        <button onClick={scrollToHome} className='unstyled-btn'><a href='/'>_home</a></button>
                     </div>
                     <div className='nav-2-btn-container'>
                         <img src={ball} alt='ball' className='ball-size' />
@@ -68,7 +68,7 @@ const Navbar = ({ scrollToHome, scrollToSkills, scrollToProjects, scrollToAbout,
                     </div>
                     <div className='nav-2-btn-container'>
                         <img src={ball} alt='ball' className='ball-size' />
-                        <button className='unstyled-btn'><a href='/da'>data_analyst</a></button>
+                        <button className='unstyled-btn'><a href='/da'>_data_analysis</a></button>
                     </div>
                 </div>
                 <button className='box-style green-bg green-btn icon' onClick={scrollToContact}>_CONTACT-ME</button>

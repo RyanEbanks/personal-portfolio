@@ -15,16 +15,25 @@ import About from './components/About';
 function App() {
   const homeRef = useRef(null);
   const homeDARef = useRef(null);
+
   const skillsRef = useRef(null);
   const skillsDARef = useRef(null);
+
   const projectsRef = useRef(null);
   const DataAnalystRef = useRef(null);
-  const aboutRef = useRef(null);
-  const contactRef = useRef(null);
 
-  const scrollToSection = (ref) => {
+  const aboutRef = useRef(null);
+  const aboutDARef = useRef(null);
+
+  const contactRef = useRef(null);
+  const contactDARef = useRef(null);
+
+ const scrollToSection = (ref) => {
+  if (ref?.current) {
     ref.current.scrollIntoView({ behavior: 'smooth' });
-  };
+  }
+};
+
 
   return (
     <div className='App'>
@@ -32,12 +41,18 @@ function App() {
         <Navbar
           scrollToHome={() => scrollToSection(homeRef)}
           scrollToHomeDA={() => scrollToSection(homeDARef)}
+
           scrollToSkills={() => scrollToSection(skillsRef)}
           scrollToSkillsDA={() => scrollToSection(skillsDARef)}
+
           scrollToProjects={() => scrollToSection(projectsRef)}
           scrollToDataAnalyst={() => scrollToSection(DataAnalystRef)}
+
           scrollToAbout={() => scrollToSection(aboutRef)}
+          scrollToAboutDA={() => scrollToSection(aboutDARef)}
+
           scrollToContact={() => scrollToSection(contactRef)}
+          scrollToContactDA={() => scrollToSection(contactDARef)}
         />
         <Routes>
           <Route path='/' element={
@@ -66,8 +81,8 @@ function App() {
                 <div ref={DataAnalystRef}>
                   <DataAnalyst scrollToContact={() => scrollToSection(contactRef)} />
                 </div>
-                <div ref={aboutRef}><About /></div>
-                <div ref={contactRef}><Contact /></div>
+                <div ref={aboutDARef}><About /></div>
+                <div ref={contactDARef}><Contact /></div>
                 <Footer />
               </div>
             </>
