@@ -11,7 +11,14 @@ const DataAnalyst = ({scrollToContact}) => {
             'project': 'case study',
             'img': require('../images/casestudy.png'),
             'projectType': 'Data Analyst',
-            'link': 'Data Analysis Report Addressing Data Inconsistency_ A Barrier to ICT Advancement in Jamaican Government- Ryan Ebanks',
+            'link': '/resume/Data Analysis Report Addressing Data Inconsistency_ A Barrier to ICT Advancement in Jamaican Government- Ryan Ebanks.pdf',
+            'description': 'Excel, SQL, Tableau'
+        },
+        {
+            'project': 'data analysis',
+            'img': require('../images/olist casestudy.png'),
+            'projectType': 'Data Analyst',
+            'link': 'https://github.com/RyanEbanks/olist-sales-analysis',
             'description': 'Excel, SQL, Tableau'
         },
     ];
@@ -27,7 +34,7 @@ return(
                 <div className='project-img-container'>
                     {DataAnalystArr.map((da) => (
                         <div className='list-style'>
-                            <a target='_blank' rel='noopener noreferrer' href={`/resume/${da.link}.pdf`}
+                            <a target='_blank' rel='noopener noreferrer' href={`${da.link}`}
                             className='proj-image-type'>
                                 <img
                                     src={da.img}
