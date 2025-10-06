@@ -13,6 +13,13 @@ const Projects = ({ scrollToContact }) => {
 
     const projectArr = [
         {
+            'project': 'Family Barbers',
+            'img': require('../images/family-barbers.png'),
+            'projectType': 'Frontend',
+            'link': 'https://family-barbers.com/',
+            'description': 'C#, ASP.NET'
+        },
+        {
             'project': 'hwni',
             'img': require('../images/hwni.png'),
             'projectType': 'Full-Stack',
@@ -67,37 +74,37 @@ const Projects = ({ scrollToContact }) => {
             'projectType': 'FullStack',
             'link': 'https://myexpensetracker-hwf2hzeqfsgzd7dv.canadacentral-01.azurewebsites.net/',
             'description': 'C#, ASP.NET'
-        },
+        }
     ];
 
     return (
         <div>
-        <img src={Title} alt='project title' className='title-svg' /> 
-        <div className='project-container border-padding'>
-        <img src={lCorner} alt='left top angle border' className='corner-proj-svg left-corner' />
-        <img src={rCorner} alt='right top angle border' className='corner-proj-svg right-corner' />
-            <h1 className='project-title'>My Projects</h1>
-            <div className='pagination-container'>
-                <div className='project-img-container'>
-                    {projectArr.map((p) => (
-                        <div className='list-style'>
-                            <a target='_blank' rel='noreferrer' href={`${p.link}`}
-                            className='proj-image-type'>
-                                <img
-                                    src={p.img}
-                                    alt={`${p.project} project`}
-                                    className='proj-img'
-                                />
-                                {/* <div className='proj-type-container'>
+            <img src={Title} alt='project title' className='title-svg' />
+            <div className='project-container border-padding'>
+                <img src={lCorner} alt='left top angle border' className='corner-proj-svg left-corner' />
+                <img src={rCorner} alt='right top angle border' className='corner-proj-svg right-corner' />
+                <h1 className='project-title'>My Projects</h1>
+                <div className='pagination-container'>
+                    <div className='project-img-container'>
+                        {projectArr.map((p) => (
+                            <div className='list-style'>
+                                <a target='_blank' rel='noreferrer' href={`${p.link}`}
+                                    className='proj-image-type'>
+                                    <img
+                                        src={p.img}
+                                        alt={`${p.project} project`}
+                                        className='proj-img'
+                                    />
+                                    {/* <div className='proj-type-container'>
                                 {p.projectType}
                                 </div> */}
-                            </a>
-                        </div>
-                    ))}
+                                </a>
+                            </div>
+                        ))}
+                    </div>
+                    <button className='project-contact-btn' onClick={scrollToContact}>_CONTACT-ME</button>
                 </div>
-                <button className='project-contact-btn' onClick={scrollToContact}>_CONTACT-ME</button>
             </div>
-        </div>
             <img src={lAngle} alt='left angle border' className='angle-proj-svg left-angle' />
             <img src={rAngle} alt='right angle border' className='angle-proj-svg right-angle' />
             <img src={Horizontal} alt='Horizontal line' className='horiz-line' />
