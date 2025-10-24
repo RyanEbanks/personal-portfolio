@@ -8,6 +8,13 @@ import Title from '../images/project-title.svg';
 const DataAnalyst = ({scrollToContact}) => {
     const DataAnalystArr = [
         {
+            'project': 'data analysis',
+            'img': require('../images/Analysis Health Insurance.png'),
+            'projectType': 'Data Analyst',
+            'link': '/resume/Analysis of 2025 Health Insurance Exchange Public Use Files.pdf',
+            'description': 'Excel, SQL, Tableau, Python'
+        },
+        {
             'project': 'case study',
             'img': require('../images/casestudy.png'),
             'projectType': 'Data Analyst',
